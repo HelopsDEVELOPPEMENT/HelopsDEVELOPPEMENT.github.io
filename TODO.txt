@@ -1,0 +1,7 @@
+Home : 
+
+[ ] image du fond du caroussel
+[ ] barre bleue
+[ ] image des services
+[ ] image des employers
+[ ] quand on clique sur our seriveces ou autre ne pas mettre en violet

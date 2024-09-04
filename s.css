@@ -1,0 +1,530 @@
+/* Reset styles */
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*min-height: 80vh;*/
+    position: relative;
+    flex: 1;
+}
+
+.contact-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3e7cb1; /* Blue background color */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    font-size: 14px;
+}
+
+.contact-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.contact-info strong {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Space evenly horizontally */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1{
+    margin-right: 400px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown toggle button */
+.dropbtn {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+/* Style for the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style for the dropdown menu items */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Style for the dropdown menu items on hover */
+.dropdown-content a:hover {
+    background-color: #ccc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Additional styles to adapt the hierarchy */
+.sub-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 0;
+    left: 100%;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the carousel */
+    align-items: center; /* Vertically center the carousel */
+    height: 20vh; /* Adjust the height as needed; 100vh means 100% of the viewport height */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 100%
+  }
+  
+.carousel-item {
+    flex: 0 0 100%; /* Make each item the same width */
+    position: relative;
+    display: flex; /* Enable flexbox for vertical centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ensure the background image covers the entire item */
+    background-position: center; /* Center the background image horizontally and vertically */
+    opacity: 0.5;
+}
+
+
+/* Adjust the opacity of the background image here 
+.carousel-item:nth-child(1) .background-image{
+    background-image: url('IT_consultant.jpg'); /* URL to your first image 
+  }
+  
+.carousel-item:nth-child(2) .background-image{
+    background-image: url('Web_designer.jpg'); /* URL to your second image 
+  }*/
+
+.carousel-item h1{
+    color: #3e7cb1;
+    opacity: 1;
+}
+
+section#hero {
+    background-color: #bbdefc;
+    color: #000;
+    text-align: center;
+    padding: 30px 0;
+    margin : 0 auto;
+    width : 100%
+}
+
+section#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section#hero .cta-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+section#hero .cta-button:hover {
+    background-color: #ccc;
+}
+
+section#services {
+    padding: 40px 0;
+}
+
+section#services h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex-basis: 48%;
+}
+
+
+.service img {
+    margin-left: 120px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+section#team {
+    background-color: #f7f7f7;
+    padding: 10px 0 200px 0;
+    text-align: center;
+}
+
+section#team h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f7f7f7; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text color */
+}
+
+.person img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.person h1 {
+    font-size: 28px; /* Font size for the name */
+    margin-bottom: 5px;
+    color: #2a4365; /* Dark blue text color */
+    font-weight: bold; /* Make the name bold */
+}
+
+.person h2 {
+    font-size: 20px; /* Font size for the job title */
+    margin-bottom: 10px;
+    color: #e53e3e; /* Red text color */
+    font-weight: bold; /* Make the job title bold */
+}
+
+/* CSS for the navigation links */
+.profile nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.profile nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.profile nav ul li:last-child {
+    margin-right: 0;
+}
+
+.profile nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.profile nav ul li a:hover {
+    color: #2a4365; /* Dark blue text color on hover */
+}
+
+/* CSS for the description section */
+.description {
+    background-color: #f7f7f7; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text color */
+}
+
+.description h2 {
+    font-size: 24px; /* Font size for headings */
+    margin-bottom: 5px; /* Reduce margin to minimize spacing */
+    color: #2a4365; /* Dark blue text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make headings bold */
+    letter-spacing: 1px; /* Add slight letter spacing for a sophisticated look */
+}
+
+.description h3 {
+    font-size: 20px; /* Font size for subheadings */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #e53e3e; /* Red text color */
+    font-weight: bold; /* Make subheadings bold */
+}
+
+.description h4 {
+    font-size: 20px; /* Slightly larger font size for sub-subheadings */
+    margin-bottom: 8px;
+    color: #555; /* Slightly lighter text color */
+}
+
+.description ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.description li {
+    margin-top: 5px;
+    line-height: 1.5; /* Improved line spacing for better readability */
+}
+
+/* Styling for nested ul elements */
+.description ul ul {
+    list-style-type: circle;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+/* Styling for list items within nested ul elements */
+.description ul ul li {
+    margin-top: 3px;
+    color: #777; /* Slightly lighter text color for nested items */
+}
+
+/* Add a border to list items */
+.description li {
+    border-left: 2px solid #3e7cb1; /* Blue border on the left side of list items */
+    padding-left: 10px; /* Add padding to the left of list items */
+}
+
+/* Add a hover effect to list items */
+.description li:hover {
+    background-color: #e6f7ff; /* Light blue background color on hover */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adjust the padding as needed */
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text on the left */
+}
+
+.footer-row > div {
+    flex-basis: calc(25% - 20px); /* Adjust the width and spacing as needed */
+    text-align: left;
+    margin: 10px; /* Regular space between each div */
+}
+
+/* Style the links within the footer */
+.footer-row a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+}
+
+.footer-row a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+@media screen and (max-width: 768px) {
+    section#hero h1 {
+        font-size: 24px;
+    }
+
+    section#hero p {
+        font-size: 16px;
+    }
+
+    section#services h2 {
+        font-size: 24px;
+    }
+
+    .service img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .service h3 {
+        font-size: 20px;
+    }
+
+    .service p {
+        font-size: 14px;
+    }
+
+    section#team h2 {
+        font-size: 24px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member h3 {
+        font-size: 18px;
+    }
+
+    .team-member p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
